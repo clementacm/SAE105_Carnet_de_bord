@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-color: #F0ECEC;
+    font-family: helvetica;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.carnet {
+    background-color: #fff;
+    margin: auto;
+    margin-left: 128px;
+    margin-right: 128px;
+    padding: 32px;
+    width: fit-content;
+    display: flex;
+    gap: 16px;
+}
+
+.page_gauche {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.page_droite {
+    width: 50%;
+}
+
+.separateur {
+    width: 8px;
+    border: dotted 2px #000;
+}
+
+.img_101 {
+    width: 128px;
+}
