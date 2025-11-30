@@ -204,5 +204,19 @@ const SAE = {
       "R2.19": "Projet Personnel et Professionnel"
     },
     "semestre": 2
+  },
+
+  "SAE4.04": {
+    "titre" : "Cette SAE n'exsite pas vraiment",
+    "compétences" : ["Erreur"],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo cursus egestas. Aliquam ipsum risus, tincidunt a libero in, vulputate placerat nunc. Nunc porta semper.",
+    "AC": {
+      "AC404.01": "Erreur",
+      "AC404.02": "Erreur",
+    },
+    "ressources": {
+      "R4.04": "Ressource 404"
+    },
+    "semestre": 0
   }
 }

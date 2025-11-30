@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: #F5F5DC;
+}
+
+header {
+    background-color: #F5F5DC;
+    color: #010B13;
+    min-height: 35vh;
+    max-height: 100vh;
+    background-image: url("../img/paper_texture.jpg");
+}
+
+main {
+    background-color: #F5F5DC;
+}
+
+.image {
+    width: 400px;
+}
+
+h2 {
+    font-weight:200;
+}
+
+.titre_sae {
+    margin-right: auto;
+    margin-left: 15vw;
+    padding: 32px 64px;
+    color: #010B13;
+}
+
+.competence {
+    padding: 8px 16px;
+    width: fit-content;
+    border: 1px solid #010B13;
+}
+
+.maison {
+    background-color: #F5F5DC;
+    margin: 16px 32px;
+}
+
+.description, .ressources, .ac {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 32px;
+    color: #010B13;
+}
+
+table, th, td {
+    border: 1px solid #010B13;
+    border-collapse: collapse;
+    padding: 8px;
+    color: #010B13;
+}
+
+.accordeon {
+    background-color: #17638C;
+    color: #F5F5DC;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.active, .accordeon:hover {
+    background-color: #318bbb;
+}
+
+.contenu {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}

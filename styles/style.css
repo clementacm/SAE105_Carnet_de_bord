@@ -1,49 +1,31 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    background-color: #F0ECEC;
-    font-family: helvetica;
+    font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #F9F5ED;
+}
+
+h2 {
+    margin-top: 0px;
 }
 
 img {
     width: 100%;
-}
-
-h1 {
-    text-align: center;
-}
-
-.carnet {
-    background-color: #fff;
-    margin: auto;
-    margin-left: 128px;
-    margin-right: 128px;
-    padding: 32px;
-    width: fit-content;
-    display: flex;
-    gap: 16px;
-}
-
-.page_gauche {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.page_droite {
-    width: 50%;
-}
-
-.separateur {
-    width: 8px;
-    border: dotted 2px #000;
-}
-
-.img_101 {
-    width: 128px;
 }

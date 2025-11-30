@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Clement</title>
+    <title>Carnet de bord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-    <header>
-        <h1>Carnet de bord</h1>
+    <header class="flex" id="scroll_haut">
+        <a href="#scroll_zone_sae">
+            <div class="zone_titre flex">
+                <div class="date">
+                    2025
+                </div>
+                <div class="titre">
+                    Mon carnet de bord
+                </div>
+                <div class="date">
+                    2026
+                </div>
+            </div>
+        </a>
+        <div class="nom">
+            CLÉMENT ACMANNE
+        </div>
     </header>
-    <main>
-        <div class="carnet">
-            <div class="page_gauche">
-                <h2>Sommaire</h2>
-                <div onclick="affichage('SAE101')">
-                    <a href="sae.html"></a>
-                </div>
-                <div>
-                    <a href="#"><strong>SAE102</strong>  - Concevoir une recommandation de communication numérique</a>
-                </div>
-                <div>
-                    <a href="#"><strong>SAE103</strong>  - Produire les éléments d’une communication visuelle</a>
-                </div>
-                <div>
-                    <a href="#"><strong>SAE104</strong>  - Produire un contenu audio et vidéo</a>
-                </div>
-                <div>
-                    <a href="#"><strong>SAE105</strong>  - Produire un site Web</a>
-                </div>
-                <div>
-                    <a href="#"><strong>SAE106</strong>  - Gérer un projet de communication numérique</a>
-                </div>
-            </div>
-            <!-- <div class="separateur"></div> -->
-            <div class="page_droite">
-                <h2>SAE101</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.</p>
-                <!-- <div class="image img_101">
-                    <img src="img/communication_numerique.jpg" alt="visuel SAE101">
-                </div> -->
-                <h3>Ressources</h3>
-                <ul>
-                    <li>R1.03 Ressource</li>
-                    <li>R1.04 Ressource</li>
-                    <li>R1.05 Ressource</li>
-                    <li>R1.09 Ressource</li>
-                </ul>
-                <a href="#">
-                    <div>Lien SAE</div>
-                </a>
-            </div>
+    <main id="scroll_zone_sae">
+        <h2 class="titre_zone_sae">Les SAE</h2>
+        <div class="zone_sae">
         </div>
     </main>
+    <footer>
+        <a href="#scroll_haut">
+            <div class="img_fleche_haut">
+                <img src="img/noun-up-3617611.svg" alt="">
+            </div>
+        </a>
+        <div class="nom_footer">
+            CLÉMENT ACMANNE
+        </div>
+    </footer>
     <script src="js/dataSAE.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
