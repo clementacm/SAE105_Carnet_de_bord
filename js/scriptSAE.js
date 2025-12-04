@@ -21,17 +21,21 @@ ressources.forEach(function(ressource, i)
 
 document.querySelector(".ressources").innerHTML="<table>"+tableau_ressources+"</table>";
 
+// Bouton ouvrir le document
+
+document.querySelector(".btn").innerHTML="<a href='../pdf/"+page+".pdf' target='_blank'><div class='btn_ouvrirAC'>Ouvrir le document <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='#F5F5DC' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><g fill='none' fill-rule='evenodd'><path d='M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8'/></g></svg></div></a>"
+
 // Section Apprentissages Critiques en accordéon
 
 let apprentissages = Object.keys(SAE[page]["AC"]);
 
-
+let descriptionsAC = Object.keys(ACRITIQUES[page]);
 
 let tableau_ac = "";
 
 apprentissages.forEach(function(ac, i)
 {
-    tableau_ac += "<button class='accordeon'>"+apprentissages[i]+" - "+SAE[page]["AC"][ac]+"</button><div class='contenu'><p>lorem ipsum</p></div>";
+    tableau_ac += "<button class='accordeon'>"+apprentissages[i]+" - "+SAE[page]["AC"][ac]+"</button><div class='contenu'><p>Description de l'AC : "+ACRITIQUES[page][ac]+"</p></div>";
 })
 
 document.querySelector(".ac").innerHTML=tableau_ac;

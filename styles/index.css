@@ -23,7 +23,7 @@ main {
 
 .zone_sae {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     margin: auto;
     gap: 45px;
     width: 40%;
@@ -39,6 +39,14 @@ main {
     width: 110px;
 }
 
+.img_dossier:hover {
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.03),
+        4px 4px 11px rgba(255, 255, 255, 0.06),
+        9px 9px 24px rgba(255, 255, 255, 0.08),
+        16px 16px 42px rgba(255, 255, 255, 0.11),
+        25px 25px 66px rgba(255, 255, 255, 0.14);
+}
+
 .dossier {
     display: flex;
     flex-direction: column;
@@ -52,8 +60,9 @@ main {
 }
 
 footer {
-    padding: 100px 100px 0px 100px;
+    padding: 16px 100px 0px 100px;
     background-color: #010B13;
+    color: #F9F5ED;
 }
 
 .nom_footer {
@@ -65,4 +74,5 @@ footer {
 .img_fleche_haut {
     width: 60px;
     margin: auto;
+    margin-bottom: 32px;
 }
