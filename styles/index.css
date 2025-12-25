@@ -1,7 +1,8 @@
 header {
-    margin: auto;
+    display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: auto;
     min-height: 100vh;
     max-height: 100vh;
     color: #2A2A2A;
@@ -14,19 +15,27 @@ header>a {
     color: #2A2A2A;
 }
 
-main {
-    background-color: #17638C;
-    color: #F9F5ED;
-    min-height: 100vh;
-    max-height: 100vh;
+h1 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 48px;
 }
 
+main {
+    background-color: #F5F5DC;
+    /*background-image: linear-gradient(#A3C77F,#17638C);*/
+    color: #F9F5ED;
+    min-height: 100vh;
+    max-height: fit-content;
+}
+
+/*
 .zone_sae {
     display: flex;
     justify-content: flex-start;
     margin: auto;
     gap: 45px;
-    width: 40%;
+    width: 50%;
     flex-wrap: wrap;
 }
 
@@ -40,11 +49,7 @@ main {
 }
 
 .img_dossier:hover {
-    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.03),
-        4px 4px 11px rgba(255, 255, 255, 0.06),
-        9px 9px 24px rgba(255, 255, 255, 0.08),
-        16px 16px 42px rgba(255, 255, 255, 0.11),
-        25px 25px 66px rgba(255, 255, 255, 0.14);
+    filter: drop-shadow(3px 5px 11px #f9f5ed);
 }
 
 .dossier {
@@ -52,11 +57,40 @@ main {
     flex-direction: column;
     justify-content: center;
 }
+*/
+/****************************/
+/*     Zone SAE             */
+/****************************/
 
-.titre {
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    font-size: 48px;
+.grille_sae {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    grid-auto-rows: 50px;
+    width: 65vw;
+}
+
+.case {
+    background-color:#479dc5;
+    padding: 8px;
+    border-radius: 16px;
+    display: flex;
+}
+
+.compacte {
+    grid-row: span 3;
+    grid-column: span 1;
+}
+
+.portrait {
+    grid-row: span 6;
+    grid-column: span 1;
+}
+
+.bandeau {
+    grid-row: span 3;
+    grid-column: span 2;
 }
 
 footer {
