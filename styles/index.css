@@ -1,14 +1,20 @@
+/****************************/
+/*          HEADER          */
+/****************************/
+
 header {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    margin-top: auto;
     min-height: 100vh;
     max-height: 100vh;
     color: #2A2A2A;
     /*background-color: #2A2A2A;*/
     background-color: #A3C77F;
     /*background-color: #F9F5ED;*/
+    position: relative;
 }
 
 header>a {
@@ -21,12 +27,39 @@ h1 {
     font-size: 48px;
 }
 
+.bouton_decouvrir {
+    background-color: #F9F5ED;
+    border-radius: 8px;
+    padding: 8px 32px;
+    position: absolute;
+    bottom: 12vh;
+    /* Technique pour centrer le bouton en position absolute */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bouton_decouvrir:hover {
+    box-shadow:
+        inset 0px 4px 6px 3px rgba(0, 0, 0, 0.1);
+}
+
+/****************************/
+/*        Zone SAE          */
+/****************************/
+
 main {
     background-color: #F5F5DC;
     /*background-image: linear-gradient(#A3C77F,#17638C);*/
     color: #F9F5ED;
     min-height: 100vh;
     max-height: fit-content;
+}
+
+.titre_zone_sae {
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    color: #2A2A2A;
 }
 
 /*
@@ -37,11 +70,6 @@ main {
     gap: 45px;
     width: 50%;
     flex-wrap: wrap;
-}
-
-.titre_zone_sae {
-    padding-top: 64px;
-    text-align: center;
 }
 
 .img_dossier {
@@ -58,9 +86,6 @@ main {
     justify-content: center;
 }
 */
-/****************************/
-/*     Zone SAE             */
-/****************************/
 
 .grille_sae {
     margin: 0 auto;
@@ -72,7 +97,8 @@ main {
 }
 
 .case {
-    background-color:#479dc5;
+    background-image: url("../img/paper_texture_bleu166088.png");
+    background-size:auto;
     padding: 8px;
     border-radius: 16px;
     display: flex;
@@ -92,6 +118,10 @@ main {
     grid-row: span 3;
     grid-column: span 2;
 }
+
+/****************************/
+/*          FOOTER          */
+/****************************/
 
 footer {
     padding: 16px 100px 0px 100px;

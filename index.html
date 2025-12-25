@@ -15,49 +15,83 @@
 </head>
 
 <body>
-    <header class="flex" id="scroll_haut">
-        <a href="#scroll_zone_sae">
-            <div class="zone_titre flex">
-                <div class="date">
-                    2025
-                </div>
-                <h1>Mon carnet de bord</h1>
-                <div class="date">
-                    2026
-                </div>
+
+    <header class="flex" id="header">
+        <div class="zone_titre flex">
+            <div>
+                2025
             </div>
-        </a>
-        <div class="nom">
+            <h1>Mon carnet de bord</h1>
+            <div>
+                2026
+            </div>
+        </div>
+        <div>
             CLÉMENT ACMANNE
         </div>
+        <a href="#zone_sae">
+            <div class="bouton_decouvrir">
+                Découvrir
+            </div>
+        </a>
+
     </header>
-    <main id="scroll_zone_sae">
+
+    <main id="zone_sae">
         <h2 class="titre_zone_sae">Les SAE</h2>
         <div class="zone_sae"></div>
         <div class="grille_sae">
-            <div class="case bandeau"></div>
-            <div class="case compacte"></div>
-            <div class="case compacte"></div>
-            <div class="case compacte"></div>
-            <div class="case portrait"></div>
-            <div class="case compacte"></div>
-            <div class="case compacte"></div>
-            <div class="case compacte"></div>
-            <div class="case bandeau"></div>
+            <a href="sae.html?sae=SAE1.01" class="case bandeau">
+                SAE 1.01
+            </a>
+            <a href="sae.html?sae=SAE1.02" class="case compacte">
+                SAE 1.02
+            </a>
+            <a href="sae.html?sae=SAE1.03" class="case compacte">
+                SAE 1.03
+            </a>
+            <a href="sae.html?sae=SAE1.04" class="case compacte">
+                SAE 1.04
+            </a>
+            <a href="sae.html?sae=SAE1.05" class="case portrait">
+                SAE 1.05
+            </a>
+            <a href="sae.html?sae=SAE1.06" class="case compacte">
+                SAE 1.06
+            </a>
+            <a href="sae.html?sae=SAE2.01" class="case compacte">
+                SAE 2.01
+            </a>
+            <a href="sae.html?sae=SAE2.02" class="case compacte">
+                SAE 2.02
+            </a>
+            <a href="sae.html?sae=SAE2.03" class="case bandeau">
+                SAE 2.03
+            </a>
+            <a href="sae.html?sae=SAE2.04" class="case bandeau">
+                SAE 2.04
+            </a>
         </div>
     </main>
+
     <footer>
-        <a href="#scroll_haut">
+        <a href="#header">
             <div class="img_fleche_haut">
-               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#F5F5DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 16V9"/></svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="#F5F5DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M16 12l-4-4-4 4M12 16V9" />
+                </svg>
             </div>
         </a>
         <div class="nom_footer">
             CLÉMENT ACMANNE
         </div>
     </footer>
+
     <script src="js/dataSAE.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
