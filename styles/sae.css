@@ -1,6 +1,9 @@
 body {
-    margin: 0;
-    background-color: #F5F5DC;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -14,10 +17,7 @@ header {
     border-radius: 16px;
 }
 
-.bouton-retour {
-    position: absolute;
-    top: 0;
-    left: 0;
+.bouton-retour, .bouton-retour-bas {
     background-color: #1E152A;
     color: #F5F5DC;
     font-weight: bold;
@@ -25,10 +25,28 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.06),
+        0px 5px 4px rgba(3, 7, 18, 0.05),
+        0px 12px 9px rgba(3, 7, 18, 0.04),
+        0px 20px 15px rgba(3, 7, 18, 0.02),
+        0px 32px 24px rgba(3, 7, 18, 0.01);
+    transition: 0.2s;
+}
+
+.bouton-retour {
+    position: absolute;
+    top: 0;
+    left: 0;
     border-radius: 16px 0;
 }
 
-.bouton-retour:hover {
+.bouton-retour-bas {
+    border-radius: 16px; 
+    margin: 0 auto 6vh auto; 
+}
+
+.bouton-retour:hover,
+.bouton-retour-bas:hover {
     background-color:#72b8de;
     color: #1E152A;
 }
@@ -50,7 +68,7 @@ h2 {
 }
 
 .zone_competences>h3 {
-    margin: 0px 16px 8px 0px;
+    margin: 16px 16px 8px 0px;
 }
 
 .competence {
@@ -67,37 +85,25 @@ h2 {
 /*     Zone principale      */
 /****************************/
 
-/* .image {
-    width: 400px;
-} */
-
 main {
     background-color: #fff;
     border: 1px solid #ddcbcb;
     border-radius: 16px;
-    margin: 8vh 15vw;
+    margin: 8vh 15vw 2vh 15vw;
     padding: 32px 64px;
+    flex: 1;
 }
 
-.description,
-.ressources,
-.apprentissages_critiques {
-    /* margin-left: 15vw;
-    margin-right: 15vw;
-    margin-bottom: 32px; */
-    color: #1E152A;
-    /* background-color: #fff;
-    padding: 16px 32px; */
-}
-
-table,
-th,
-td {
+table, th, td {
     border: 1px solid #1E152A;
     border-collapse: collapse;
     padding: 8px;
     color: #1E152A;
 }
+
+/****************************/
+/*         Accordéon        */
+/****************************/
 
 .bouton {
     color: #F5F5DC;
@@ -111,6 +117,7 @@ td {
         0px 12px 9px rgba(3, 7, 18, 0.04),
         0px 20px 15px rgba(3, 7, 18, 0.02),
         0px 32px 24px rgba(3, 7, 18, 0.01);
+    transition: 0.2s;
 }
 
 .bouton>a {
@@ -130,11 +137,13 @@ td {
     color: #F5F5DC;
     border-radius: 5px;
     padding: 18px;
+    margin-bottom: 8px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
-    margin-bottom: 8px;
+    font-family: inherit; /* pour garder la police DM Sans */
+    transition: 0.2s;
 }
 
 .accordeon::before {
@@ -147,7 +156,7 @@ td {
     transform: rotate(90deg);
 }
 
-.active,
+.accordeon.active,
 .accordeon:hover {
     background-color: #318bbb;
 }
@@ -156,4 +165,7 @@ td {
     padding: 0 18px;
     display: none;
     overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 16px;
 }

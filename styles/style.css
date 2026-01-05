@@ -5,17 +5,11 @@ html {
 body {
     margin: 0;
     font-family: "DM Sans", sans-serif;
+    background-color: #F5F5DC;
 }
 
-h1 {
+h1, h2 {
     margin: 0;
-}
-
-
-.flex {
-    display: flex;
-    align-items: center;
-    gap: 32px;
 }
 
 
@@ -24,12 +18,14 @@ a {
     color: #F9F5ED;
 }
 
-h2 {
-    margin-top: 0px;
-}
-
 img {
     width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 /****************************/

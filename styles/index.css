@@ -7,16 +7,10 @@ header {
     justify-content: center;
     flex-direction: column;
     margin: auto;
-    margin-top: auto;
     min-height: 100vh;
-    max-height: 100vh;
     color: #2A2A2A;
     background-color: #A3C77F;
     position: relative;
-}
-
-header>a {
-    color: #2A2A2A;
 }
 
 h1 {
@@ -27,6 +21,7 @@ h1 {
 
 .bouton_decouvrir {
     background-color: #F9F5ED;
+    color: #2A2A2A;
     border-radius: 8px;
     padding: 8px 32px;
     position: absolute;
@@ -34,22 +29,19 @@ h1 {
     /* Technique pour centrer le bouton en position absolute */
     left: 50%;
     transform: translateX(-50%);
+    transition: 0.2s;
 }
 
 .bouton_decouvrir:hover {
-    box-shadow:
-        inset 0px 4px 6px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 4px 6px 3px rgba(0, 0, 0, 0.1);
 }
 
 /****************************/
-/*        Zone SAE          */
+/*        Grille SAE        */
 /****************************/
 
 main {
-    background-color: #F5F5DC;
-    color: #F9F5ED;
     min-height: 100vh;
-    max-height: fit-content;
 }
 
 h2 {
@@ -60,11 +52,8 @@ h2 {
 }
 
 .grille_sae {
-    padding-bottom: 8vh;
-}
-
-.grille_sae {
     margin: 0 auto;
+    padding-bottom: 8vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
@@ -80,12 +69,9 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* Style du texte */
     font-weight: bold;
     font-size: 32px;
-
-    transition: transform 0.2s ease;
+    transition: transform 0.2s;
 }
 
 .case:hover {
@@ -93,6 +79,7 @@ h2 {
     filter: brightness(1.1);
 }
 
+/* Classes pour les formats de cases */
 .compacte {
     grid-row: span 3;
     grid-column: span 1;
