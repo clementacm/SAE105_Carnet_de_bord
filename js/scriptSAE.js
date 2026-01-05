@@ -3,20 +3,37 @@
 let url = new URLSearchParams(location.search);
 let page = url.get('sae');
 
-let num_sae = Object.keys(SAE);
+let num_sae = Object.keys(SAE); // Récupère la liste des SAE (SAE1.01, SAE1.02 etc...)
 
-let ressources = Object.keys(SAE[page]["ressources"]);
+let ressources = Object.keys(SAE[page]["ressources"]); // Récupère les numéros des ressources de la SAE choisie (R1.01, R1.02 etc...)
 
 document.querySelector("h1").innerHTML = page;
 document.querySelector("h2").innerHTML = SAE[page]["titre"];
-document.querySelector(".competence").innerHTML = SAE[page]["compétences"];
+
+let competences = SAE[page]["compétences"];
+console.log(competences);
+
+let affichage_competences = "";
+
+competences.forEach(function (competence) {
+  affichage_competences += `<div class='tag_competence'>${competence}</div>`
+})
+
+document.querySelector(".competence").innerHTML = affichage_competences;
+
+if (competences.length > 1){
+  document.querySelector(".zone_competences>h3").innerHTML = "Compétences : ";
+}
+
+/*document.querySelector(".competence").innerHTML = "<div>"+SAE[page]["compétences"]+"</div>";*/
+
 document.querySelector(".description>p").innerHTML = SAE[page]["description"];
 
 // Tableau des ressources
 
 let tableau_ressources = "";
 
-ressources.forEach(function (ressource, i) {
+ressources.forEach(function (ressource, i) { // Pour chaque ressource => création d'une ligne de tableau avec deux cases
   tableau_ressources += "<tr><td>" + ressource + "</td><td>" + SAE[page]["ressources"][ressource] + "</td></tr>";
 })
 

@@ -4,20 +4,33 @@ body {
 }
 
 header {
+    position: relative;
     color: #F5F5DC;
-    min-height: 30vh;
+    min-height: 20vh;
     max-height: 40vh;
-    background-image: url("../img/paper_texture_bleu166088.png");
-    margin: 0vw 5vw;
+    background-image: url("../img/paper_texture_blue.png");
+    background-size: cover;
+    margin: 4vw 5vw 0vw 5vw;
     border-radius: 16px;
 }
 
-main {
-    background-color: #F5F5DC;
+.bouton-retour {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1E152A;
+    color: #F5F5DC;
+    font-weight: bold;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px 0;
 }
 
-.image {
-    width: 400px;
+.bouton-retour:hover {
+    background-color:#72b8de;
+    color: #1E152A;
 }
 
 h2 {
@@ -30,25 +43,51 @@ h2 {
     padding: 32px 64px;
 }
 
-.competence {
-    padding: 8px 16px;
-    width: fit-content;
-    border: 1px solid #F5F5DC;
-    border-radius: 5px;
+.zone_competences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.maison {
-    background-color: #F5F5DC;
-    margin: 16px 32px;
+.zone_competences>h3 {
+    margin: 0px 16px 8px 0px;
+}
+
+.competence {
+    display: flex;
+}
+
+.tag_competence {
+    border-left: 2px solid #F5F5DC;
+    padding-left: 8px;
+    margin-right: 16px;
+}
+
+/****************************/
+/*     Zone principale      */
+/****************************/
+
+/* .image {
+    width: 400px;
+} */
+
+main {
+    background-color: #fff;
+    border: 1px solid #ddcbcb;
+    border-radius: 16px;
+    margin: 8vh 15vw;
+    padding: 32px 64px;
 }
 
 .description,
 .ressources,
 .apprentissages_critiques {
-    margin-left: 15vw;
+    /* margin-left: 15vw;
     margin-right: 15vw;
-    margin-bottom: 32px;
+    margin-bottom: 32px; */
     color: #1E152A;
+    /* background-color: #fff;
+    padding: 16px 32px; */
 }
 
 table,

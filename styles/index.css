@@ -11,9 +11,7 @@ header {
     min-height: 100vh;
     max-height: 100vh;
     color: #2A2A2A;
-    /*background-color: #2A2A2A;*/
     background-color: #A3C77F;
-    /*background-color: #F9F5ED;*/
     position: relative;
 }
 
@@ -49,43 +47,21 @@ h1 {
 
 main {
     background-color: #F5F5DC;
-    /*background-image: linear-gradient(#A3C77F,#17638C);*/
     color: #F9F5ED;
     min-height: 100vh;
     max-height: fit-content;
 }
 
-.titre_zone_sae {
+h2 {
     padding-top: 8vh;
     padding-bottom: 2vh;
     text-align: center;
     color: #2A2A2A;
 }
 
-/*
-.zone_sae {
-    display: flex;
-    justify-content: flex-start;
-    margin: auto;
-    gap: 45px;
-    width: 50%;
-    flex-wrap: wrap;
+.grille_sae {
+    padding-bottom: 8vh;
 }
-
-.img_dossier {
-    width: 110px;
-}
-
-.img_dossier:hover {
-    filter: drop-shadow(3px 5px 11px #f9f5ed);
-}
-
-.dossier {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-*/
 
 .grille_sae {
     margin: 0 auto;
@@ -97,11 +73,24 @@ main {
 }
 
 .case {
-    background-image: url("../img/paper_texture_bleu166088.png");
-    background-size:auto;
+    background-image: url("../img/paper_texture_blue.png");
+    background-size: auto;
     padding: 8px;
     border-radius: 16px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Style du texte */
+    font-weight: bold;
+    font-size: 32px;
+
+    transition: transform 0.2s ease;
+}
+
+.case:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
 }
 
 .compacte {
@@ -117,26 +106,4 @@ main {
 .bandeau {
     grid-row: span 3;
     grid-column: span 2;
-}
-
-/****************************/
-/*          FOOTER          */
-/****************************/
-
-footer {
-    padding: 16px 100px 0px 100px;
-    background-color: #010B13;
-    color: #F9F5ED;
-}
-
-.nom_footer {
-    font-size: 48px;
-    text-align: center;
-    margin: 0px;
-}
-
-.img_fleche_haut {
-    width: 60px;
-    margin: auto;
-    margin-bottom: 32px;
 }

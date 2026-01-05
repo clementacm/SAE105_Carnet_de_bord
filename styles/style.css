@@ -31,3 +31,29 @@ h2 {
 img {
     width: 100%;
 }
+
+/****************************/
+/*          FOOTER          */
+/****************************/
+
+footer {
+    padding: 16px 100px 0px 100px;
+    background-color: #010B13;
+    color: #F9F5ED;
+}
+
+.nom_footer {
+    font-size: 48px;
+    text-align: center;
+    margin: 0px;
+}
+
+footer>a {
+    display: block;
+    width : fit-content;
+    margin: 0 auto;
+}
+
+.back_to_top {
+    margin-bottom: 32px;
+}
