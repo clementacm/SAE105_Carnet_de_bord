@@ -1,9 +1,7 @@
 // Récupération des données
-
 let num_sae = Object.keys(SAE);
 
 // Création de le grille Bento
-
 let grille = "";
 
 num_sae.forEach(function(id, i) {
@@ -23,5 +21,5 @@ num_sae.forEach(function(id, i) {
     grille += "<a href='sae.html?sae=" + id + "' class='case " + classe_case + "'>" + id + "</a>";
 
 });
-
 document.querySelector(".grille_sae").innerHTML = grille;
+

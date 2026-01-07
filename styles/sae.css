@@ -1,8 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -49,6 +47,8 @@ header {
 .bouton-retour-bas:hover {
     background-color:#72b8de;
     color: #1E152A;
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 h2 {
