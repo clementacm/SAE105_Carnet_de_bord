@@ -6,3 +6,6 @@ Réalisé dans le cadre de mon BUT MMI, ce projet consistait à concevoir un car
 * **Design :** Interface ergonomique, inspiration Bento Grids pour la page d'accueil.
 
 🔗 **<a href="https://clementacm.github.io/SAE105_Carnet_de_bord/" target="_blank">Voir le site en ligne</a>** 
+
+<img width="1315" height="278" alt="image" src="https://github.com/user-attachments/assets/c4db3354-bdaf-468d-ad66-076de04e2508" />
+
