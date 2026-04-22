@@ -1,4 +1,6 @@
-# Réalisé dans le cadre de mon BUT MMI, ce projet consistait à concevoir un carnet de bord automatisé regroupant les différentes Situations d'Apprentissage et d'Évaluation (SAÉ). L'objectif était de générer dynamiquement chaque page à partir d'une structure de données JavaScript.
+# Carnet de bord | Projet MMI
+
+Réalisé dans le cadre de mon BUT MMI, ce projet consistait à concevoir un carnet de bord automatisé regroupant les différentes Situations d'Apprentissage et d'Évaluation (SAÉ). L'objectif était de générer dynamiquement chaque page à partir d'une structure de données JavaScript.
 
 **Technologies utilisées** : HTML5, CSS3, JavaScript.
 **Design** : Interface ergonomique, inspiration Bento Grids pour la page d'accueil.
